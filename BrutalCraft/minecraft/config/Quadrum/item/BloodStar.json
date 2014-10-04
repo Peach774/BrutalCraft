@@ -1,0 +1,9 @@
+{
+    "name": "blood_star",
+    "texture": "BloodStar",
+    "type": "item",
+    "ore-dictionary": [
+        "netherstarBlood"
+    ]
+    
+}

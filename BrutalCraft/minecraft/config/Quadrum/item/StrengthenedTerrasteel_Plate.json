@@ -1,0 +1,9 @@
+{
+    "name": "strenghthenedterrasteel_plate",
+    "texture": "PLATE_STRENGTHENEDTERRASTEELALLOY",
+    "type": "item",
+    "ore-dictionary": [
+        "plateTerrasteelAlloyStrengthened"
+    ]
+    
+}

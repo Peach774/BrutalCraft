@@ -1,0 +1,9 @@
+{
+    "name": "rawterrasteel_plate",
+    "texture": "PLATE_RAWTERRASTEELALLOY",
+    "type": "item",
+    "ore-dictionary": [
+        "plateTerrasteelAlloyRaw"
+    ]
+    
+}

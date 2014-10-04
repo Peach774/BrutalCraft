@@ -1,0 +1,11 @@
+{
+    "name": "BlockDiamond_Compressed",
+    "default-texture": "compressedDiamondBlock",
+    "material": "metal",
+    "hardness": 25,
+    "mining-level": 2,
+    "ore-dictionary": [
+        "compressedDiamondBlock1x"
+    ],
+    "drops-self": "true"
+}

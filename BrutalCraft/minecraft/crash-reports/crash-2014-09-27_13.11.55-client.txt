@@ -1,0 +1,267 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 9/27/14 1:11 PM
+Description: Updating screen events
+
+java.lang.NoClassDefFoundError: iguanaman/hungeroverhaul/IguanaConfig
+	at mariculture.plugins.PluginHungerOverhaul.addInformation(PluginHungerOverhaul.java:40)
+	at mariculture.fishery.items.ItemVanillaFish.func_77624_a(ItemVanillaFish.java:114)
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:523)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.updateFilteredItems(GuiContainerCreative.java:378)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_147053_i(GuiContainerCreative.java:350)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_147050_b(GuiContainerCreative.java:550)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_146286_b(GuiContainerCreative.java:456)
+	at net.minecraft.client.gui.GuiScreen.func_146274_d(GuiScreen.java:306)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146274_d(GuiContainer.java)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_146274_d(GuiContainerCreative.java:566)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:268)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1629)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:962)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:887)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:165)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at mariculture.plugins.PluginHungerOverhaul.addInformation(PluginHungerOverhaul.java:40)
+	at mariculture.fishery.items.ItemVanillaFish.func_77624_a(ItemVanillaFish.java:114)
+	at net.minecraft.item.ItemStack.func_82840_a(ItemStack.java:523)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.updateFilteredItems(GuiContainerCreative.java:378)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_147053_i(GuiContainerCreative.java:350)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_147050_b(GuiContainerCreative.java:550)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_146286_b(GuiContainerCreative.java:456)
+	at net.minecraft.client.gui.GuiScreen.func_146274_d(GuiScreen.java:306)
+	at net.minecraft.client.gui.inventory.GuiContainer.func_146274_d(GuiContainer.java)
+	at net.minecraft.client.gui.inventory.GuiContainerCreative.func_146274_d(GuiContainerCreative.java:566)
+	at net.minecraft.client.gui.GuiScreen.func_146269_k(GuiScreen.java:268)
+
+-- Affected screen --
+Details:
+	Screen name: net.minecraft.client.gui.inventory.GuiContainerCreative
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Peach774'/520, l='MpServer', x=-235.47, y=84.90, z=730.34]]
+	Chunk stats: MultiplayerChunkCache: 263, 272
+	Level seed: 0
+	Level generator: ID 04 - BIOMESOP, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-19,64,820), Chunk: (at 13,4,4 in -2,51; contains blocks -32,0,816 to -17,255,831), Region: (-1,1; contains chunks -32,32 to -1,63, blocks -512,0,512 to -1,255,1023)
+	Level time: 38275 game time, 38275 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 113 total; [EntityPech['entity.Pech.name'/1101, l='MpServer', x=-285.50, y=63.00, z=709.50], EntityBat['Bat'/551, l='MpServer', x=-258.78, y=39.69, z=705.75], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/545, l='MpServer', x=-292.56, y=44.00, z=744.00], EntityPig['Pig'/558, l='MpServer', x=-280.63, y=68.00, z=732.78], EntityWitchSpider['Witch Spider'/559, l='MpServer', x=-272.75, y=64.00, z=743.16], EntityHauntedTool['Haunted Tool'/556, l='MpServer', x=-291.84, y=44.00, z=745.19], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/1095, l='MpServer', x=-161.76, y=62.00, z=732.27], EntityBrainyZombie['Angry Zombie'/557, l='MpServer', x=-289.59, y=45.00, z=728.09], EntityPig['Pig'/554, l='MpServer', x=-276.75, y=63.00, z=721.53], EntityPig['Pig'/555, l='MpServer', x=-281.09, y=63.00, z=724.03], EntityPig['Pig'/552, l='MpServer', x=-276.50, y=63.00, z=716.22], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/15, l='MpServer', x=-204.88, y=45.00, z=728.78], EntityPig['Pig'/553, l='MpServer', x=-279.84, y=63.00, z=719.25], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/17, l='MpServer', x=-213.31, y=37.00, z=724.84], EntitySquid['Squid'/567, l='MpServer', x=-257.84, y=61.34, z=675.13], EntityRocketCreeper['Rocket Creeper'/804, l='MpServer', x=-290.94, y=66.00, z=737.56], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/16, l='MpServer', x=-199.88, y=46.00, z=730.50], EntitySquid['Squid'/566, l='MpServer', x=-259.34, y=61.13, z=677.97], EntityChicken['Chicken'/19, l='MpServer', x=-218.53, y=69.00, z=754.47], EntityPech['entity.Pech.2.name'/806, l='MpServer', x=-289.88, y=66.00, z=737.41], EntityChicken['Chicken'/18, l='MpServer', x=-226.41, y=64.00, z=726.22], EntityPech['entity.Pech.name'/807, l='MpServer', x=-234.50, y=35.00, z=775.50], EntityBat['Bat'/560, l='MpServer', x=-284.03, y=17.00, z=801.16], EntityPech['entity.Pech.name'/1108, l='MpServer', x=-282.63, y=63.00, z=715.75], EntityPig['Pig'/574, l='MpServer', x=-269.50, y=64.00, z=748.81], EntityBat['Bat'/813, l='MpServer', x=-195.88, y=32.00, z=784.91], EntityPig['Pig'/573, l='MpServer', x=-270.22, y=64.00, z=738.22], EntityPig['Pig'/572, l='MpServer', x=-269.50, y=64.00, z=735.50], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/1105, l='MpServer', x=-277.50, y=63.00, z=716.50], EntityCovenWitch['Coven Witch'/29, l='MpServer', x=-202.06, y=65.00, z=664.50], EntitySkeleton['Skeleton'/808, l='MpServer', x=-157.34, y=20.00, z=761.72], EntityGhost['entity.menagerie.ghost.name'/1104, l='MpServer', x=-262.50, y=65.00, z=775.50], EntitySquid['Squid'/570, l='MpServer', x=-257.13, y=55.16, z=675.50], EntityPech['entity.Pech.1.name'/1107, l='MpServer', x=-290.28, y=63.00, z=709.69], EntityGhost['entity.menagerie.ghost.name'/31, l='MpServer', x=-174.87, y=62.00, z=719.79], EntitySquid['Squid'/569, l='MpServer', x=-263.44, y=62.34, z=671.81], EntitySkeleton['Skeleton'/30, l='MpServer', x=-182.70, y=63.00, z=711.06], EntitySquid['Squid'/568, l='MpServer', x=-254.50, y=62.19, z=676.84], EntityBat['Bat'/34, l='MpServer', x=-194.25, y=33.73, z=731.50], EntityPech['entity.Pech.name'/35, l='MpServer', x=-193.63, y=47.00, z=728.34], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/32, l='MpServer', x=-177.92, y=62.10, z=716.98], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/33, l='MpServer', x=-170.76, y=62.25, z=723.67], EntityItem['item.item.porkchopRaw'/38, l='MpServer', x=-192.69, y=67.13, z=770.88], EntityItem['item.item.porkchopRaw'/39, l='MpServer', x=-195.88, y=67.13, z=769.81], EntityPech['entity.Pech.name'/36, l='MpServer', x=-215.84, y=41.00, z=733.69], EntityItem['item.tile.flower13'/37, l='MpServer', x=-193.88, y=64.13, z=758.88], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/43, l='MpServer', x=-192.50, y=38.00, z=807.50], EntityChicken['Chicken'/521, l='MpServer', x=-232.47, y=68.00, z=738.47], EntityEnderman['Enderman'/44, l='MpServer', x=-200.50, y=44.00, z=800.50], EntityBat['Bat'/50, l='MpServer', x=-189.09, y=24.00, z=662.53], EntityClientPlayerMP['Peach774'/520, l='MpServer', x=-235.47, y=84.90, z=730.34], EntityPig['Pig'/55, l='MpServer', x=-190.50, y=65.00, z=700.50], EntityPig['Pig'/54, l='MpServer', x=-188.50, y=65.00, z=698.50], EntityBat['Bat'/53, l='MpServer', x=-181.94, y=49.00, z=691.78], EntityBat['Bat'/52, l='MpServer', x=-181.47, y=51.88, z=692.03], EntityPig['Pig'/541, l='MpServer', x=-308.50, y=63.00, z=677.50], EntityBat['Bat'/59, l='MpServer', x=-184.34, y=25.00, z=731.41], EntityPig['Pig'/540, l='MpServer', x=-308.50, y=63.00, z=679.50], EntityDMimic['Mimic Chest'/58, l='MpServer', x=-176.50, y=22.00, z=720.50], EntityPig['Pig'/543, l='MpServer', x=-312.50, y=63.00, z=688.50], EntityPig['Pig'/57, l='MpServer', x=-185.75, y=65.00, z=696.47], EntityPig['Pig'/542, l='MpServer', x=-312.50, y=63.00, z=688.50], EntityPig['Pig'/56, l='MpServer', x=-181.06, y=65.00, z=701.19], EntityCreeper['Creeper'/63, l='MpServer', x=-182.88, y=67.00, z=791.84], EntitySkeleton['Skeleton'/62, l='MpServer', x=-181.50, y=38.00, z=799.50], EntityRocketCreeper['Rocket Creeper'/61, l='MpServer', x=-181.41, y=39.00, z=793.78], EntityItem['item.item.porkchopRaw'/60, l='MpServer', x=-190.88, y=66.13, z=769.78], EntityChicken['Chicken'/68, l='MpServer', x=-167.50, y=65.00, z=656.50], EntityBat['Bat'/610, l='MpServer', x=-220.56, y=37.00, z=673.63], EntityItem['item.tile.flower2.poppy'/611, l='MpServer', x=-228.38, y=63.13, z=674.31], EntityHauntedTool['Haunted Tool'/69, l='MpServer', x=-161.50, y=36.00, z=693.50], EntityBrainyZombie['Angry Zombie'/609, l='MpServer', x=-231.50, y=21.00, z=668.50], EntityGhost['entity.menagerie.ghost.name'/885, l='MpServer', x=-291.50, y=63.00, z=657.50], EntityPech['entity.Pech.name'/614, l='MpServer', x=-231.47, y=44.00, z=767.94], EntityChicken['Chicken'/65, l='MpServer', x=-170.13, y=64.00, z=651.91], EntityEldritchGuardian['Eldritch Guardian'/615, l='MpServer', x=-239.50, y=42.00, z=753.47], EntityChicken['Chicken'/66, l='MpServer', x=-165.50, y=65.00, z=655.50], EntityDEnchantedBook['Bewitched Tome'/612, l='MpServer', x=-227.88, y=37.00, z=692.13], EntityBat['Bat'/887, l='MpServer', x=-197.50, y=30.46, z=786.91], EntityChicken['Chicken'/67, l='MpServer', x=-161.50, y=65.00, z=651.50], EntityChicken['Chicken'/613, l='MpServer', x=-226.56, y=69.00, z=747.44], EntityPech['entity.Pech.name'/618, l='MpServer', x=-228.22, y=43.00, z=780.50], EntityBat['Bat'/77, l='MpServer', x=-173.88, y=22.30, z=804.41], EntityChicken['Chicken'/619, l='MpServer', x=-233.13, y=70.00, z=772.22], EntityPig['Pig'/78, l='MpServer', x=-162.69, y=64.00, z=807.50], EntityEldritchGuardian['Eldritch Guardian'/616, l='MpServer', x=-237.88, y=41.00, z=760.34], EntityPig['Pig'/617, l='MpServer', x=-229.94, y=68.00, z=760.03], EntityDMimic['Mimic Chest'/72, l='MpServer', x=-172.50, y=22.00, z=719.50], EntityPig['Pig'/620, l='MpServer', x=-237.31, y=71.00, z=772.47], EntityGhost['entity.menagerie.ghost.name'/628, l='MpServer', x=-283.50, y=63.00, z=662.50], EntityPig['Pig'/90, l='MpServer', x=-158.09, y=63.00, z=718.66], EntityHat['unknown'/582, l='MpServer', x=-235.47, y=84.90, z=730.34], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/583, l='MpServer', x=-253.50, y=25.00, z=666.50], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/584, l='MpServer', x=-246.50, y=25.00, z=674.50], EntityInfestedVillager['entity.menagerie.infestedVillager.name'/585, l='MpServer', x=-243.50, y=25.00, z=672.50], EntityBrainyZombie['Angry Zombie'/586, l='MpServer', x=-251.50, y=22.00, z=678.50], EntitySquid['Squid'/587, l='MpServer', x=-253.66, y=61.00, z=683.94], EntitySquid['Squid'/588, l='MpServer', x=-246.81, y=61.03, z=699.53], EntitySquid['Squid'/589, l='MpServer', x=-248.50, y=62.00, z=711.25], EntitySquid['Squid'/590, l='MpServer', x=-252.69, y=61.00, z=708.50], EntityEldritchGuardian['Eldritch Guardian'/591, l='MpServer', x=-240.59, y=42.00, z=753.50], EntityChicken['Chicken'/593, l='MpServer', x=-248.50, y=70.00, z=778.50], EntityPig['Pig'/592, l='MpServer', x=-236.04, y=73.00, z=753.35], EntityChicken['Chicken'/595, l='MpServer', x=-248.13, y=69.00, z=786.91], EntityPig['Pig'/594, l='MpServer', x=-245.94, y=70.00, z=768.16], EntityChicken['Chicken'/596, l='MpServer', x=-255.44, y=69.00, z=784.34], EntityTrail['unknown'/598, l='MpServer', x=-235.47, y=84.90, z=730.34], EntityGhost['entity.menagerie.ghost.name'/1078, l='MpServer', x=-162.08, y=62.08, z=731.37], EntityHat['unknown'/1779, l='MpServer', x=-194.25, y=33.73, z=731.50], EntityHat['unknown'/1782, l='MpServer', x=-181.50, y=38.00, z=799.50], EntityHat['unknown'/1780, l='MpServer', x=-181.94, y=49.00, z=691.78], EntityHat['unknown'/1781, l='MpServer', x=-228.22, y=43.00, z=780.50], EntitySkeleton['Skeleton'/985, l='MpServer', x=-157.31, y=20.00, z=761.66]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2433)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:908)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:165)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_67, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1130583896 bytes (1078 MB) / 2279604224 bytes (2174 MB) up to 2386034688 bytes (2275 MB)
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms1536m -Xmx2560m -XX:PermSize=512m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 15, tallocated: 96
+	FML: MCP v9.05 FML v7.10.25.1207 Minecraft Forge 10.13.0.1207 Optifine OptiFine_1.7.10_HD_U_A4 137 mods loaded, 136 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FML{7.10.25.1207} [Forge Mod Loader] (forge-1.7.10-10.13.0.1207-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forge{10.13.0.1207} [Minecraft Forge] (forge-1.7.10-10.13.0.1207-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	appliedenergistics2-core{rv1-stable-1} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Aroma1997Core{1.0.2.7} [Aroma1997Core] (Aroma1997Core-1.7.10-1.0.2.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CodeChickenCore{1.0.3.26} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	<CoFH ASM>{000} [CoFH ASM Data Initialization] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	<DragonAPI ASM>{0} [DragonAPI ASM Data Initialization] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MCVanillaTweaks{1.0} [Mariculture - Vanilla Tweaks] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MobiusCore{1.2.3} [MobiusCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NotEnoughItems{1.0.3.56} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.3.56-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenEye{0.6} [OpenEye] (OpenEye-0.6-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenModsCore{@VERSION@} [OpenModsCore] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	malisiscore{1.7.10-0.9.6} [Malisis Core] (malisiscore-1.7.10-0.9.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AppleCore{1.0.0} [AppleCore] (AppleCore-mc1.7.10-1.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	appliedenergistics2{rv1-stable-1} [Applied Energistics 2] (appliedenergistics2-rv1-stable-1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ArchimedesShips{1.7.10 v1.7.1} [Archimedes' Ships] (ArchimedesShips-1.7.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Aroma1997CoreHelper{1.0.2.7} [Aroma1997Core|Helper] (Aroma1997Core-1.7.10-1.0.2.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AromaBackup{0.0.0.3} [AromaBackup] (AromaBackup-1.7.10-0.0.0.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CoFHCore{1.7.10R3.0.0B6} [CoFH Core] (CoFHCore-[1.7.10]3.0.0B6-32.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	asielib{0.3.1} [asielib] (AsieLib-1.7.10-0.3.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Baubles{1.0.1.7} [Baubles] (Baubles-1.7.10-1.0.1.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Thaumcraft{4.2.0.1} [Thaumcraft] (Thaumcraft-1.7.10-4.2.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Waila{1.5.4a} [Waila] (Waila-1.5.4a_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Automagy{0.10.2} [Automagy] (Automagy-1.7.10-0.10.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	bdlib{1.4.5.24} [BD Lib] (bdlib-mc1710-1.4.5.24.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BiblioCraft{1.8.2} [BiblioCraft] (BiblioCraft[v1.8.2][MC1.7.10].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Mantle{1.7.10-0.3.1.jenkins180} [Mantle] (Mantle-mc1.7.10-0.3.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Natura{2.2.0} [Natura] (natura-1.7.10-2.2.0-b1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BiomesOPlenty{2.1.0} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.1.0.991-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BiblioWoodsBoP{1.8} [BiblioWoods Biomes O'Plenty Edition] (BiblioWoods[BiomesOPlenty][v1.8].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IC2{2.2.647-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.647-experimental.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Core{6.0.18} [BuildCraft] (buildcraft-6.0.18.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Forestry{3.0.0.90} [Forestry for Minecraft] (forestry_1.7.10-3.0.0.90.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BiblioWoodsForestry{1.6} [BiblioWoods Forestry Edition] (BiblioWoods[Forestry][v1.6].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BiblioWoodsNatura{1.4} [BiblioWoods Natura Edition] (BiblioWoods[Natura][v1.4].jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Billund{1.0.0} [CCMODNAME] (Billund-1.7.X-1.0.0.B6-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BinnieCore{2.0-dev4} [Binnie Core] (binnie-mods-2.0-dev4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Botany{2.0-dev4} [Botany] (binnie-mods-2.0-dev4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ExtraBees{2.0-dev4} [Extra Bees] (binnie-mods-2.0-dev4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ExtraTrees{2.0-dev4} [Extra Trees] (binnie-mods-2.0-dev4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Genetics{2.0-dev4} [Genetics] (binnie-mods-2.0-dev4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	AWWayofTime{v1.0.1g} [Blood Magic: Alchemical Wizardry] (Blood Magic-v1.1.0(1.7.10).jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	bluepower{0.1.755} [Blue Power] (BluePower-1.7.10-0.1.755-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Botania{r1.2-119} [Botania] (Botania r1.2-119.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Builders{6.0.18} [BC Builders] (buildcraft-6.0.18.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Energy{6.0.18} [BC Energy] (buildcraft-6.0.18.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Factory{6.0.18} [BC Factory] (buildcraft-6.0.18.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Transport{6.0.18} [BC Transport] (buildcraft-6.0.18.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildCraft|Silicon{6.0.18} [BC Silicon] (buildcraft-6.0.18.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CarpentersBlocks{3.3.0 DEV R2} [Carpenter's Blocks] (Carpenter's Blocks v3.3.0 DEV R2 - MC 1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	chisel{1.5.7} [Chisel] (Chisel-1.7.10-1.5.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Railcraft{9.3.2.0} [Railcraft] (Railcraft_1.7.10-9.3.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThermalFoundation{1.7.10R1.0.0B3} [Thermal Foundation] (ThermalFoundation-[1.7.10]1.0.0B3-8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThermalExpansion{1.7.10R4.0.0B5} [Thermal Expansion] (ThermalExpansion-[1.7.10]4.0.0B5-13.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	TConstruct{1.7.10-1.7.0.build702} [Tinkers' Construct] (TConstruct-1.7.10-1.7.0d3.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ForgeMultipart{1.1.0.307} [Forge Multipart] (ForgeMultipart-1.7.10-1.1.0.307-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] (ThaumicTinkerer-2.5-1.7.10-387.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MagicBees{1.7.10-2.1.20} [Magic Bees] (magicbees-1.7.10-2.1.20.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenComputers|Core{1.0.0} [OpenComputers (Core)] (OpenComputers-MC1.7.10-1.3.4.63-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	DragonAPI{release} [DragonAPI] (DragonAPI 1.7.10 V1f.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ChromatiCraft{Alpha} [ChromatiCraft] (ChromatiCraft 1.7.10 V1f.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	harvestcraft{1.7.10b} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10b.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	gregtech{MC1710} [GregTech] (gregtech_1.7.10-5.05.08.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenComputers{1.3.4.63} [OpenComputers] (OpenComputers-MC1.7.10-1.3.4.63-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	computronics{1.0.7} [Computronics] (Computronics-1.7.10-1.0.7.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	BuildMod{v1.0} [Build Mod] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	CoroAI{v1.0} [CoroAI] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ExtendedRenderer{v1.0} [Extended Renderer] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ConfigMod{v1.0} [Extended Mod Config] (CoroUtil-1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	menagerie{1.0} [menagerie] (dark_menagerie-1.7.10-beta-1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	props{1.10} [Decocraft] (Decocraft-1.10_1.7.2and1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	DimensionGuard{0.5.0} [DimensionGuard] (DimensionGuard-0.5.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Eln{41} [Electrical Age] (ElectricalAge_BETA-1.9_r41.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Emotes{1.0} [Emotes] (Emotes 1.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Enchiridion{1.1} [Enchiridion] (Enchiridion-1.7.X-1.2b.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	EnderIO{1.7.10-2.0.8.221} [Ender IO] (EnderIO-1.7.10-2.0.8.221.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	enviromine{1.2.28} [EnviroMine] (EnviroMine-v1.2.28.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	extracells{2.1.12} [ExtraCells] (ExtraCells-1.7.10-2.1.12b8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ExtraUtilities{1.1.0k} [Extra Utilities] (extrautilities-1.1.0k.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	FastCraft{1.9} [FastCraft] (fastcraft-1.9.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Steamcraft{0.26.2} [Flaxbeard's Steam Power] (FlaxbeardsSteamPower-1.7.10-0.26.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	fluxedfeederunit{1.0.0} [FluxedFeederUnit] (FluxedFeederUnit-MC1.7.10-1.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ForbiddenMagic{1.7.10-0.52} [Forbidden Magic] (Forbidden Magic-1.7.10-0.52.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	McMultipart{1.1.0.307} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.1.0.307-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	GardenCore{1.2.0} [Garden Core] (GardenCore-1.7.10-1.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	GardenContainers{1.2.1} [Garden Containers] (GardenContainers-1.7.10-1.2.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	GardenTrees{1.2.0} [Garden Trees] (GardenTrees-1.7.10-1.2.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	gendustry{1.3.4.28} [GenDustry] (gendustry-mc1710-1.3.4.28.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	GeoStrata{Gamma} [GeoStrata] (GeoStrata 1.7.10 V1f.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	iChunUtil{4.0.0} [iChunUtil] (iChunUtil-4.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Hats{4.0.1} [Hats] (Hats-4.0.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	HatStand{4.0.0} [HatStand] (HatStand-4.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	HardcoreQuesting{The Journey (4.2.1)} [Hardcore Questing Mode] (HQM-The Journey (4.2.1).jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	HungerOverhaul{1.7.10-beta.1.jenkins16} [Hunger Overhaul] (HungerOverhaul-1.7.10-beta.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	InfernalMobs{1.5.6} [Infernal Mobs] (InfernalMobs-1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	inpure|core{1.7.10R1.0.0B1} [INpureCore] (INpureCore-[1.7.10]1.0.0B1-1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IronChest{6.0.62.742} [Iron Chest] (ironchest-1.7.10-6.0.62.742-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	JABBA{1.1.4} [JABBA] (Jabba-1.1.4_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Magitek{0.0.1} [Magitek] (Magitek-1.7.10-0.1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	malisisdoors{1.7.10-1.1.3} [Malisis' Doors] (malisisdoors-1.7.10-1.1.3.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Mariculture{1.2.3d} [Mariculture] (Mariculture-1.7.10-1.2.3d.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MineMenu{1.2.0} [MineMenu] (MineMenu-1.7.10-1.2.0.B44-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	MineTweaker3{${version}} [MineTweaker 3] (MineTweaker3-1.7.10-3.0.8B.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ModTweaker{0.6} [ModTweaker] (ModTweaker-1.7.X-0.6-17.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Morph{0.9.0} [Morph] (Morph-Beta-0.9.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	NEIPlugins{1.1.0.8-unofficial} [NEI Plugins Unofficial] (NEIPlugins-MC1.7.10-1.1.0.8-unofficial.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenMods{0.6} [OpenMods] (OpenModsLib-1.7.10-0.6-snapshot-224.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	OpenBlocks{1.3} [OpenBlocks] (OpenBlocks-1.7.10-1.3-snapshot-433.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	PneumaticCraft{1.2.6} [PneumaticCraft] (PneumaticCraft-1.7.10-1.2.7-13-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	primitivemobs{1.0} [Primitive Mobs] (primitivemobs-1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ProjectE{Alpha 0.1n} [ProjectE] (ProjectE-Alpha 0.1n.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Quadrum{1.2.0} [Quadrum] (Quadrum-1.7.10-1.2.0.B13-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RedstoneArsenal{1.7.10R1.1.0B4} [Redstone Arsenal] (RedstoneArsenal-[1.7.10]1.1.0B4-10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RIO{1.4.3} [RemoteIO] (RemoteIO-1.7.10-1.4.3.B49-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	RPGAdvMod{1.0.0} [RPGAdvMod] (RPGAdvMod-1.0.0_1.7.10.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	SpecialMobs{3.0.2} [Special Mobs] (SpecialMobs-1.7.10-3.0.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	SpiceOfLife{1.2.1} [The Spice of Life] (SpiceOfLife-mc1.7.10-1.2.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	statues{2.1.4} [Statues] (statues-1.7.10-2.1.4.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	StevesCarts{2.0.0.b16} [Steve's Carts 2] (StevesCarts2.0.0.b16.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	StevesFactoryManager{A93} [Steve's Factory Manager] (StevesFactoryManagerA93.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	Sync{4.0.0} [Sync] (Sync-4.0.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	thaumicenergistics{0.6.10b} [Thaumic Energistics] (thaumicenergistics-0.6.10b.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ThaumicExploration{0.6.0} [Thaumic Exploration] (ThaumicExploration-1.7.10-1.1-17.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	TiCTooltips{1.1.11b} [TiC Tooltips] (TiCTooltips-mc1.7.10-1.1.11b.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	TMechworks{1.7.10-67.34d1d9b} [Tinkers' Mechworks] (TMechworks_mc1.7.10_0.2.8.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	TML{3.0.1} [TooMuchLoot] (TooMuchLoot-1.7.10-3.0.1.B22-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	TravellersGear{1.6} [Traveller's Gear] (TravellersGear-1.7.10-1.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	TwilightForest{2.3.2} [The Twilight Forest] (twilightforest-1.7.10-2.3.2.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	UtilityMobs{3.1.1} [Utility Mobs] (UtilityMobs-1.7.10-3.1.1.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	WailaHarvestability{1.1.0} [Waila Harvestability] (WailaHarvestability-mc1.7.x-1.1.0.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	witchery{0.20.6} [Witchery] (witchery-1.7.10-0.20.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ZAMod{v1.9.5} [Zombie Awareness] (ZombieAwareness-1.9.5.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	ForgeMicroblock{1.1.0.307} [Forge Microblocks] (ForgeMultipart-1.7.10-1.1.0.307-universal.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	IguanaTweaksTConstruct{1.7.10-2.0.6} [Iguana Tinker Tweaks] (IguanaTinkerTweaks-1.7.10-2.0.6.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available
+	asielibcore{} [AsieLib CoreMod] (minecraft.jar) Unloaded->Disabled
+	AE2 Version: stable rv1-stable-1 for Forge 10.13.0.1187
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: optifine
+	TConstruct Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: gregtech
+	AE2 Integration: IC2:ON, RotaryCraft:OFF, RC:ON, BC:ON, MJ6:ON, MJ5:ON, RF:ON, RFItem:ON, MFR:OFF, DSU:ON, FZ:OFF, FMP:ON, RB:OFF, CLApi:OFF, Waila:ON, InvTweaks:OFF, NEI:ON, CraftGuide:OFF, Mekanism:OFF, ImmibisMicroblocks:OFF, BetterStorage:OFF
+	Forestry : [Forestry] Warning: You have mods that change the behavior of Minecraft, ForgeModLoader, and/or Minecraft Forge to your client: 
+Optifine
+These may have caused this error, and may not be supported. Try reproducing the crash WITHOUT these mods, and report it then.
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics GL version 2.1.0 - Build 8.15.10.2189, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because EXT_framebuffer_object is supported.
+Anisotropic filtering is supported and maximum anisotropy is 2.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

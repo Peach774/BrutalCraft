@@ -1,0 +1,268 @@
+---- Minecraft Crash Report ----
+// Sorry :(
+
+Time: 9/26/14 5:08 PM
+Description: Initializing game
+
+java.lang.NoSuchFieldError: generatorFuel
+	at forestry.Forestry.<init>(Forestry.java:72)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at cpw.mods.fml.common.ILanguageAdapter$JavaAdapter.getNewInstance(ILanguageAdapter.java:173)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:486)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:492)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:204)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:480)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:867)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:165)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at forestry.Forestry.<init>(Forestry.java:72)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at cpw.mods.fml.common.ILanguageAdapter$JavaAdapter.getNewInstance(ILanguageAdapter.java:173)
+	at cpw.mods.fml.common.FMLModContainer.constructMod(FMLModContainer.java:486)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:208)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:118)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:492)
+	at cpw.mods.fml.client.FMLClientHandler.beginMinecraftLoading(FMLClientHandler.java:204)
+	at net.minecraft.client.Minecraft.func_71384_a(Minecraft.java:480)
+
+-- Initialization --
+Details:
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:867)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:134)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.multimc.onesix.OneSixLauncher.launchWithMainClass(OneSixLauncher.java:286)
+	at org.multimc.onesix.OneSixLauncher.launch(OneSixLauncher.java:376)
+	at org.multimc.EntryPoint.listen(EntryPoint.java:165)
+	at org.multimc.EntryPoint.main(EntryPoint.java:54)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 7 (amd64) version 6.1
+	Java Version: 1.7.0_67, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1270566624 bytes (1211 MB) / 1759510528 bytes (1678 MB) up to 2386034688 bytes (2275 MB)
+	JVM Flags: 4 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms1536m -Xmx2560m -XX:PermSize=512m
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.25.1207 Minecraft Forge 10.13.0.1207 Optifine OptiFine_1.7.10_HD_U_A4 127 mods loaded, 126 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed
+	FML{7.10.25.1207} [Forge Mod Loader] (forge-1.7.10-10.13.0.1207-universal.jar) Unloaded->Constructed
+	Forge{10.13.0.1207} [Minecraft Forge] (forge-1.7.10-10.13.0.1207-universal.jar) Unloaded->Constructed
+	appliedenergistics2-core{rv1-stable-1} [AppliedEnergistics2 Core] (minecraft.jar) Unloaded->Constructed
+	Aroma1997Core{1.0.2.7} [Aroma1997Core] (Aroma1997Core-1.7.10-1.0.2.7.jar) Unloaded->Constructed
+	CodeChickenCore{1.0.3.26} [CodeChicken Core] (minecraft.jar) Unloaded->Constructed
+	<CoFH ASM>{000} [CoFH ASM Data Initialization] (minecraft.jar) Unloaded->Constructed
+	<DragonAPI ASM>{0} [DragonAPI ASM Data Initialization] (minecraft.jar) Unloaded->Constructed
+	MCVanillaTweaks{1.0} [Mariculture - Vanilla Tweaks] (minecraft.jar) Unloaded->Constructed
+	MobiusCore{1.2.3} [MobiusCore] (minecraft.jar) Unloaded->Constructed
+	NotEnoughItems{1.0.3.56} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.3.56-universal.jar) Unloaded->Constructed
+	ThaumicTinkerer-preloader{0.1} [Thaumic Tinkerer Core] (minecraft.jar) Unloaded->Constructed
+	OpenModsCore{@VERSION@} [OpenModsCore] (minecraft.jar) Unloaded->Constructed
+	malisiscore{1.7.10-0.9.6} [Malisis Core] (malisiscore-1.7.10-0.9.6.jar) Unloaded->Constructed
+	AppleCore{1.0.0} [AppleCore] (AppleCore-mc1.7.10-1.0.0.jar) Unloaded->Constructed
+	appliedenergistics2{rv1-stable-1} [Applied Energistics 2] (appliedenergistics2-rv1-stable-1.jar) Unloaded->Constructed
+	ArchimedesShips{1.7.10 v1.7.1} [Archimedes' Ships] (ArchimedesShips-1.7.1.jar) Unloaded->Constructed
+	Aroma1997CoreHelper{1.0.2.7} [Aroma1997Core|Helper] (Aroma1997Core-1.7.10-1.0.2.7.jar) Unloaded->Constructed
+	AromaBackup{0.0.0.3} [AromaBackup] (AromaBackup-1.7.10-0.0.0.3.jar) Unloaded->Constructed
+	CoFHCore{1.7.10R3.0.0B6} [CoFH Core] (CoFHCore-[1.7.10]3.0.0B6-32.jar) Unloaded->Constructed
+	asielib{0.3.1} [asielib] (AsieLib-1.7.10-0.3.1.jar) Unloaded->Constructed
+	Baubles{1.0.1.7} [Baubles] (Baubles-1.7.10-1.0.1.7.jar) Unloaded->Constructed
+	Thaumcraft{4.2.0.1} [Thaumcraft] (Thaumcraft-1.7.10-4.2.0.1.jar) Unloaded->Constructed
+	Waila{1.5.4a} [Waila] (Waila-1.5.4a_1.7.10.jar) Unloaded->Constructed
+	Automagy{0.10.2} [Automagy] (Automagy-1.7.10-0.10.2.jar) Unloaded->Constructed
+	bdlib{1.4.5.24} [BD Lib] (bdlib-mc1710-1.4.5.24.jar) Unloaded->Constructed
+	BiblioCraft{1.8.2} [BiblioCraft] (BiblioCraft[v1.8.2][MC1.7.10].jar) Unloaded->Constructed
+	Mantle{1.7.10-0.3.1.jenkins180} [Mantle] (Mantle-mc1.7.10-0.3.1.jar) Unloaded->Constructed
+	Natura{2.2.0} [Natura] (natura-1.7.10-2.2.0-b1.jar) Unloaded->Constructed
+	BiomesOPlenty{2.1.0} [Biomes O' Plenty] (BiomesOPlenty-1.7.10-2.1.0.991-universal.jar) Unloaded->Constructed
+	BiblioWoodsBoP{1.8} [BiblioWoods Biomes O'Plenty Edition] (BiblioWoods[BiomesOPlenty][v1.8].jar) Unloaded->Constructed
+	IC2{2.2.647-experimental} [IndustrialCraft 2] (industrialcraft-2-2.2.647-experimental.jar) Unloaded->Constructed
+	BuildCraft|Core{6.0.18} [BuildCraft] (buildcraft-6.0.18.jar) Unloaded->Constructed
+	Forestry{3.0.0.198} [Forestry for Minecraft] (forestry_1.7.10-3.0.0.198.jar) Unloaded
+	BiblioWoodsForestry{1.6} [BiblioWoods Forestry Edition] (BiblioWoods[Forestry][v1.6].jar) Unloaded
+	BiblioWoodsNatura{1.4} [BiblioWoods Natura Edition] (BiblioWoods[Natura][v1.4].jar) Unloaded
+	Billund{1.0.0} [CCMODNAME] (Billund-1.7.X-1.0.0.B6-universal.jar) Unloaded
+	BinnieCore{2.0-dev4} [Binnie Core] (binnie-mods-2.0-dev4.jar) Unloaded
+	Botany{2.0-dev4} [Botany] (binnie-mods-2.0-dev4.jar) Unloaded
+	ExtraBees{2.0-dev4} [Extra Bees] (binnie-mods-2.0-dev4.jar) Unloaded
+	ExtraTrees{2.0-dev4} [Extra Trees] (binnie-mods-2.0-dev4.jar) Unloaded
+	Genetics{2.0-dev4} [Genetics] (binnie-mods-2.0-dev4.jar) Unloaded
+	AWWayofTime{v1.0.1g} [Blood Magic: Alchemical Wizardry] (Blood Magic-v1.1.0(1.7.10).jar) Unloaded
+	bluepower{0.1.755} [Blue Power] (BluePower-1.7.10-0.1.755-universal.jar) Unloaded
+	Botania{r1.2-119} [Botania] (Botania r1.2-119.jar) Unloaded
+	BuildCraft|Builders{6.0.18} [BC Builders] (buildcraft-6.0.18.jar) Unloaded
+	BuildCraft|Energy{6.0.18} [BC Energy] (buildcraft-6.0.18.jar) Unloaded
+	BuildCraft|Factory{6.0.18} [BC Factory] (buildcraft-6.0.18.jar) Unloaded
+	BuildCraft|Transport{6.0.18} [BC Transport] (buildcraft-6.0.18.jar) Unloaded
+	BuildCraft|Silicon{6.0.18} [BC Silicon] (buildcraft-6.0.18.jar) Unloaded
+	CarpentersBlocks{3.3.0 DEV R2} [Carpenter's Blocks] (Carpenter's Blocks v3.3.0 DEV R2 - MC 1.7.10.jar) Unloaded
+	chisel{1.5.7} [Chisel] (Chisel-1.7.10-1.5.7.jar) Unloaded
+	Railcraft{9.3.2.0} [Railcraft] (Railcraft_1.7.10-9.3.2.0.jar) Unloaded
+	ThermalFoundation{1.7.10R1.0.0B3} [Thermal Foundation] (ThermalFoundation-[1.7.10]1.0.0B3-8.jar) Unloaded
+	ThermalExpansion{1.7.10R4.0.0B5} [Thermal Expansion] (ThermalExpansion-[1.7.10]4.0.0B5-13.jar) Unloaded
+	TConstruct{1.7.10-1.7.0.build665} [Tinkers' Construct] (TConstruct-1.7.10-1.7.0d2.jar) Unloaded
+	ForgeMultipart{1.1.0.307} [Forge Multipart] (ForgeMultipart-1.7.10-1.1.0.307-universal.jar) Unloaded
+	ThaumicTinkerer{unspecified} [Thaumic Tinkerer] (ThaumicTinkerer-2.5-1.7.10-387.jar) Unloaded
+	MagicBees{1.7.10-2.1.20} [Magic Bees] (magicbees-1.7.10-2.1.20.jar) Unloaded
+	OpenComputers|Core{1.0.0} [OpenComputers (Core)] (OpenComputers-MC1.7.10-1.3.4.63-universal.jar) Unloaded
+	DragonAPI{release} [DragonAPI] (DragonAPI 1.7.10 V1f.jar) Unloaded
+	ChromatiCraft{Alpha} [ChromatiCraft] (ChromatiCraft 1.7.10 V1f.jar) Unloaded
+	harvestcraft{1.7.10b} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10b.jar) Unloaded
+	gregtech{MC1710} [GregTech] (gregtech_1.7.10-5.05.08.jar) Unloaded
+	OpenComputers{1.3.4.63} [OpenComputers] (OpenComputers-MC1.7.10-1.3.4.63-universal.jar) Unloaded
+	computronics{1.0.7} [Computronics] (Computronics-1.7.10-1.0.7.jar) Unloaded
+	menagerie{1.0} [menagerie] (dark_menagerie-1.7.10-beta-1.0.jar) Unloaded
+	props{1.10} [Decocraft] (Decocraft-1.10_1.7.2and1.7.10.jar) Unloaded
+	DimensionGuard{0.5.0} [DimensionGuard] (DimensionGuard-0.5.0.jar) Unloaded
+	Eln{41} [Electrical Age] (ElectricalAge_BETA-1.9_r41.jar) Unloaded
+	Emotes{1.0} [Emotes] (Emotes 1.0.1.jar) Unloaded
+	Enchiridion{1.1} [Enchiridion] (Enchiridion-1.7.X-1.2b.jar) Unloaded
+	EnderIO{1.7.10-2.0.8.221} [Ender IO] (EnderIO-1.7.10-2.0.8.221.jar) Unloaded
+	enviromine{1.2.28} [EnviroMine] (EnviroMine-v1.2.28.jar) Unloaded
+	ExtraUtilities{1.1.0k} [Extra Utilities] (extrautilities-1.1.0k.jar) Unloaded
+	FastCraft{1.9} [FastCraft] (fastcraft-1.9.jar) Unloaded
+	Steamcraft{0.26.2} [Flaxbeard's Steam Power] (FlaxbeardsSteamPower-1.7.10-0.26.2.jar) Unloaded
+	fluxedfeederunit{1.0.0} [FluxedFeederUnit] (FluxedFeederUnit-MC1.7.10-1.0.0.jar) Unloaded
+	ForbiddenMagic{1.7.10-0.52} [Forbidden Magic] (Forbidden Magic-1.7.10-0.52.jar) Unloaded
+	McMultipart{1.1.0.307} [Minecraft Multipart Plugin] (ForgeMultipart-1.7.10-1.1.0.307-universal.jar) Unloaded
+	gendustry{1.3.4.28} [GenDustry] (gendustry-mc1710-1.3.4.28.jar) Unloaded
+	GeoStrata{Gamma} [GeoStrata] (GeoStrata 1.7.10 V1f.jar) Unloaded
+	iChunUtil{4.0.0} [iChunUtil] (iChunUtil-4.0.0.jar) Unloaded
+	Hats{4.0.1} [Hats] (Hats-4.0.1.jar) Unloaded
+	HatStand{4.0.0} [HatStand] (HatStand-4.0.0.jar) Unloaded
+	HardcoreQuesting{The Journey (4.2.1)} [Hardcore Questing Mode] (HQM-The Journey (4.2.1).jar) Unloaded
+	HungerOverhaul{1.7.10-beta.1.jenkins16} [Hunger Overhaul] (HungerOverhaul-1.7.10-beta.1.jar) Unloaded
+	InfernalMobs{1.5.6} [Infernal Mobs] (InfernalMobs-1.7.10.jar) Unloaded
+	inpure|core{1.7.10R1.0.0B1} [INpureCore] (INpureCore-[1.7.10]1.0.0B1-1.jar) Unloaded
+	IronChest{6.0.62.742} [Iron Chest] (ironchest-1.7.10-6.0.62.742-universal.jar) Unloaded
+	JABBA{1.1.4} [JABBA] (Jabba-1.1.4_1.7.10.jar) Unloaded
+	Magitek{0.0.1} [Magitek] (Magitek-1.7.10-0.1.0.jar) Unloaded
+	malisisdoors{1.7.10-1.1.3} [Malisis' Doors] (malisisdoors-1.7.10-1.1.3.jar) Unloaded
+	Mariculture{1.2.3d} [Mariculture] (Mariculture-1.7.10-1.2.3d.jar) Unloaded
+	MineMenu{1.2.0} [MineMenu] (MineMenu-1.7.10-1.2.0.B44-universal.jar) Unloaded
+	MineTweaker3{${version}} [MineTweaker 3] (MineTweaker3-1.7.10-3.0.8B.jar) Unloaded
+	ModTweaker{0.6} [ModTweaker] (ModTweaker-1.7.X-0.6-17.jar) Unloaded
+	Morph{0.9.0} [Morph] (Morph-Beta-0.9.0.jar) Unloaded
+	NEIPlugins{1.1.0.8-unofficial} [NEI Plugins Unofficial] (NEIPlugins-MC1.7.10-1.1.0.8-unofficial.jar) Unloaded
+	OpenMods{0.6} [OpenMods] (OpenModsLib-1.7.10-0.6-snapshot-224.jar) Unloaded
+	OpenBlocks{1.3} [OpenBlocks] (OpenBlocks-1.7.10-1.3-snapshot-433.jar) Unloaded
+	PneumaticCraft{1.2.6} [PneumaticCraft] (PneumaticCraft-1.7.10-1.2.7-13-universal.jar) Unloaded
+	primitivemobs{0.3} [Primitive Mobs] (primitivemobs-0.3.jar) Unloaded
+	ProjectE{Alpha 0.1n} [ProjectE] (ProjectE-Alpha 0.1n.jar) Unloaded
+	Quadrum{1.2.0} [Quadrum] (Quadrum-1.7.10-1.2.0.B13-universal.jar) Unloaded
+	RedstoneArsenal{1.7.10R1.1.0B4} [Redstone Arsenal] (RedstoneArsenal-[1.7.10]1.1.0B4-10.jar) Unloaded
+	RIO{1.4.3} [RemoteIO] (RemoteIO-1.7.10-1.4.3.B49-universal.jar) Unloaded
+	RPGAdvMod{1.0.0} [RPGAdvMod] (RPGAdvMod-1.0.0_1.7.10.jar) Unloaded
+	SpecialMobs{3.0.2} [Special Mobs] (SpecialMobs-1.7.10-3.0.2.jar) Unloaded
+	SpiceOfLife{1.2.1} [The Spice of Life] (SpiceOfLife-mc1.7.10-1.2.1.jar) Unloaded
+	statues{2.1.4} [Statues] (statues-1.7.10-2.1.4.jar) Unloaded
+	StevesCarts{2.0.0.b16} [Steve's Carts 2] (StevesCarts2.0.0.b16.jar) Unloaded
+	StevesFactoryManager{A93} [Steve's Factory Manager] (StevesFactoryManagerA93.jar) Unloaded
+	Sync{4.0.0} [Sync] (Sync-4.0.0.jar) Unloaded
+	thaumicenergistics{0.6.10b} [Thaumic Energistics] (thaumicenergistics-0.6.10b.jar) Unloaded
+	ThaumicExploration{0.6.0} [Thaumic Exploration] (ThaumicExploration-1.7.10-1.1-17.jar) Unloaded
+	TiCTooltips{1.1.11b} [TiC Tooltips] (TiCTooltips-mc1.7.10-1.1.11b.jar) Unloaded
+	TMechworks{1.7.10-67.34d1d9b} [Tinkers' Mechworks] (TMechworks_mc1.7.10_0.2.8.jar) Unloaded
+	TML{3.0.1} [TooMuchLoot] (TooMuchLoot-1.7.10-3.0.1.B22-universal.jar) Unloaded
+	TravellersGear{1.5} [Traveller's Gear] (TravellersGear-1.7.10-1.5.jar) Unloaded
+	TwilightForest{2.3.2} [The Twilight Forest] (twilightforest-1.7.10-2.3.2.jar) Unloaded
+	UtilityMobs{3.1.1} [Utility Mobs] (UtilityMobs-1.7.10-3.1.1.jar) Unloaded
+	WailaHarvestability{1.1.0} [Waila Harvestability] (WailaHarvestability-mc1.7.x-1.1.0.jar) Unloaded
+	witchery{0.20.6} [Witchery] (witchery-1.7.10-0.20.6.jar) Unloaded
+	ForgeMicroblock{1.1.0.307} [Forge Microblocks] (ForgeMultipart-1.7.10-1.1.0.307-universal.jar) Unloaded
+	IguanaTweaksTConstruct{1.7.10-2.0.6} [Iguana Tinker Tweaks] (IguanaTinkerTweaks-1.7.10-2.0.6.jar) Unloaded
+	asielibcore{} [AsieLib CoreMod] (minecraft.jar) Unloaded->Disabled
+	AE2 Version: stable rv1-stable-1 for Forge 10.13.0.1187
+	Mantle Environment: DO NOT REPORT THIS CRASH! Unsupported mods in environment: optifine
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: Intel(R) HD Graphics GL version 2.1.0 - Build 8.15.10.2189, Intel
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because EXT_framebuffer_object is supported.
+Anisotropic filtering is supported and maximum anisotropy is 2.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

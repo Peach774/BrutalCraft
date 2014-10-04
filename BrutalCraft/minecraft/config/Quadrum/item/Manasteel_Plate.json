@@ -1,0 +1,9 @@
+{
+    "name": "manasteel_plate",
+    "texture": "PLATE_MANASTEEL",
+    "type": "item",
+    "ore-dictionary": [
+        "plateManasteel"
+    ]
+    
+}
